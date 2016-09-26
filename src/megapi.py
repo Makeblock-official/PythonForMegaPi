@@ -183,7 +183,7 @@ class MegaPi():
     def gyroRead(self,axis,callback):
         self.__writeRequestPackage(6,axis,callback)
 
-	def pressureSensorBegin(self):
+    def pressureSensorBegin(self):
         self.__writePackage(bytearray([0xff,0x55,0x3,0x0,0x2,29]))
 		
     def pressureSensorRead(self,type,callback):
