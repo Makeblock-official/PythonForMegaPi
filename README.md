@@ -44,14 +44,14 @@ dtoverlay=pi3-disable-bt
 
 
  * install python library for Makeblock
- ```
+ ```sh
  sudo pip install megapi
  ```
  * the initial code for python.
-```
- from megapi import *
- bot = MegaPi()
- bot.start() #if using usb cable, need to call bot.start('/dev/ttyACM0')
+```python
+from megapi import *
+bot = MegaPi()
+bot.start() #if using usb cable, need to call bot.start('/dev/ttyACM0')
  ```
  * python your code
 
@@ -149,4 +149,4 @@ dtoverlay=pi3-disable-bt
 	  * **focusOn** ( port )
 	  * **focusOff** ( port )
 
-###Learn more from Makeblock official website: www.makeblock.com
+### Learn more from Makeblock official website: www.makeblock.com
